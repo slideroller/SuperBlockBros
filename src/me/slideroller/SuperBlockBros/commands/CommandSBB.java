@@ -14,8 +14,8 @@ public class CommandSBB implements CommandExecutor {
     if (cmd.getName().equalsIgnoreCase("sbb"))
     {
       if (args.length == 0) {
-    	  sender.sendMessage(ChatColor.BLUE + "Super Block Bros" + "Version: " + SuperBlockBros.instance.getDescription().getVersion() + ChatColor.GRAY + "Plugin Developed by Slider,ThaPengwin,Abalalahaha");
-    	  sender.sendMessage("This plugin is on alpha expect bugs! But please post the error logs at bukkit!");
+    	  sender.sendMessage(ChatColor.BLUE + "Super Block Bros" + "Version: " + SuperBlockBros.instance.getDescription().getVersion() + ChatColor.GRAY + " by slideroller, StashCat, and abalalahaha");
+    	  sender.sendMessage("Commands do not work!!!");
           sender.sendMessage("/sbb join <Game> - Join a game!");
           sender.sendMessage("/sbb leave - Leave a game!");
           sender.sendMessage("/sbb arena - Shows the arena setup!");

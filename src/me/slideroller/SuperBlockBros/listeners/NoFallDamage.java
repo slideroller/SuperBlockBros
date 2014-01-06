@@ -10,7 +10,6 @@ import org.bukkit.event.entity.EntityDamageEvent.DamageCause;
 
 public class NoFallDamage implements Listener {
 
-	@SuppressWarnings("unused")
 	private SuperBlockBros plugin;
 
 	public NoFallDamage(SuperBlockBros plugin) {
@@ -19,13 +18,11 @@ public class NoFallDamage implements Listener {
 
 	@EventHandler
 	public void onEntityDamage(EntityDamageEvent event) {
-		if (!(event.getEntity() instanceof Player))
+		if (!(event.getEntity() instanceof Player)){
 			return;
+        }
 		if (event.getCause() == DamageCause.FALL) {
-			Player player = (Player) event.getEntity();
-			if (player.isOp() || !(player.isOp())) {
-				event.setCancelled(true);
-			}
+			event.setCancelled(true);
 		}
 	}
 }
